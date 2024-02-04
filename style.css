@@ -107,6 +107,9 @@
 .more-info div{
     margin: .3rem 0;
 }
+.more-info > div{
+    margin-top: 0.5rem;
+}
 
 .map{
     padding: 1rem 2rem;
