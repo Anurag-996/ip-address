@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ip Address</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main-con d-flex" id="first-page">
+      <div class="left-con d-flex flex-column">
+        <h2>Post Office Application.</h2>
+        <p>
+          This Application Allows you to extract information about the nearest
+          Post Offices, based on your location.
+        </p>
+        <div class="img-con">
+          <img src="./resources/undraw_messenger_re_8bky 1.png" alt="" />
+        </div>
+      </div>
+      <div class="right-con d-flex">
+        <div class="d-flex flex-column">
+          <h2>Your Current IP Address is <span id="ip-address"></span></h2>
+          <button id="btn-get">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="display-data display-none" id="second-page">
+      <div class="nav-info-con d-flex flex-column">
+        <div class="nav-info d-flex">
+          <h2>IP Address :</h2>
+          <h2 id="ip"></h2>
+        </div>
+        <div class="nav-info d-flex flex-column">
+          <div class="nav-info-item d-flex">
+            <div class="nav-items">
+              Lat:
+              <span id="lat"></span>
+            </div>
+            <div class="nav-items">
+              City:
+              <span id="city"></span>
+            </div>
+            <div class="nav-items">
+              Organization:
+              <span id="organization"></span>
+            </div>
+          </div>
+          <div class="nav-info-item d-flex">
+            <div class="nav-items">
+              Long:
+              <span id="long"></span>
+            </div>
+            <div class="nav-items">
+              Region:
+              <span id="region"></span>
+            </div>
+            <div class="nav-items">
+              Hostname:
+              <span id="hostname">None</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <h2>Your Current Location</h2>
+        <iframe
+          width="100%"
+          height="500"
+          frameborder="0"
+          id="map-frame"
+          style="border: 0"
+        ></iframe>
+      </div>
+
+      <div class="more-info">
+        <h2>More Information About You</h2>
+        <div class="d-flex flex-column">
+          <div>Time Zone: <span id="time-zone"></span></div>
+          <div>Date and Time: <span id="date-time"></span></div>
+          <div>Pincode: <span id="pincode"></span></div>
+          <div>Message: <span id="message"></span></div>
+        </div>
+      </div>
+
+      <div class="postal-data-container">
+        <div class="search">
+            <img class="icon" src="./resources/search.png" alt="" srcset="">
+            <input type="text" name="filter-search" id="filter-search" placeholder="Search by name">
+        </div>
+        <div class="postal-display"></div>
+    </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.main-con{
+    height: 100vh;
+}
+
+
+.left-con{
+    width: 50%;
+    height: 100%;
+    background: #000000;
+    padding: 0rem 2rem;
+    justify-content: space-evenly;
+}
+
+.right-con{
+    width: 50%;
+    background-color: #575A85;
+    height: 100%;
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-con{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.left-con h2{
+    color:  #575A85;
+}
+
+.left-con>p{
+    color: #B8BCCC;
+    font-size: 1.35rem;
+}
+.img-con>img{
+    width: 100%;
+}
+
+.right-con h2{
+    color: #B8BCCC;
+
+}
+
+.right-con span{
+    color: #FFFFFF;
+}
+
+.right-con > div{
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.right-con #btn-get{
+    width: fit-content;
+    padding: 0.2rem 2rem;
+    background-color: transparent;
+    border: 2px solid #B8BCCC;
+    color: #B8BCCC;
+}
+
+#second-page{
+    background-color: #000;
+    color: #B8BCCC;
+    padding: 1rem 2rem;
+}
+
+.nav-info-item{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    width: calc(100% / 3);
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.nav-items span{
+    display: block;
+    margin-left: .4rem;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.more-info > h2{
+    text-align: center;
+}
+
+.more-info{
+    margin: 1rem 0;
+}
+
+.more-info div{
+    margin: .3rem 0;
+}
+
+.map{
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: #575A85;
+}
+
+.postal-display {
+    display: grid;
+    gap: 1rem;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.add-info {
+    margin: 10px;
+}
+
+.display-none {
+    display: none;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.postal-box {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 10px;
+    background-color: #575A85;
+}
+
+.search {
+    border: 2px solid #B8BCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.search img {
+    width: 1rem;
+    margin: .3rem;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    font-size: medium;
+    background: transparent;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.more-info > h2,.map>h2 , .nav-info>h2:nth-child(2){
+    color: #ffffff;
+}
